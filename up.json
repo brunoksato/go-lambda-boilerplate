@@ -1,0 +1,12 @@
+
+{
+  "name": "app",
+  "regions": ["us-west-2"],
+  "lambda": {
+    "memory": 128
+  },
+  "hooks": {
+    "build": "CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o server `ls *.go | grep -v _test.go`",
+    "clean": "rm server"
+  }
+}
