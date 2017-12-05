@@ -2,7 +2,7 @@
 *.o
 *.a
 *.so
-gruff-server
+go-api-lambda
 
 # Folders
 _obj

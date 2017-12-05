@@ -3,6 +3,7 @@ package main
 import (
 	"os"
 
+	"github.com/brunoksato/go-api-lambda/api"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 )
@@ -16,7 +17,10 @@ func main() {
 	e.Use(middleware.Recover())
 
 	// Route => handler
-	e.GET("/", Home)
+	e.GET("/", api.Home)
+
+	private := e.Group("/api")
+	private.GET("/test", api.Test)
 
 	// Start server
 	addr := ":" + os.Getenv("PORT")
