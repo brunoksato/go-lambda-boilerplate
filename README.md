@@ -2,7 +2,8 @@
 Go API Lambda
 
 # install 
-https://up.docs.apex.sh
+- https://up.docs.apex.sh
+- dep ensure
 
 # deploy
 - `up`
