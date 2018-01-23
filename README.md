@@ -1,5 +1,5 @@
-# go-api-lambda
-Go API Lambda
+# Go Lambda Boilerplate
+Go Lambda Boilerplate
 
 # install 
 - https://up.docs.apex.sh
